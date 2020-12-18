@@ -1,0 +1,341 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+#goods {
+  width: 1024px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  flex: 1;
+  position: relative;
+}
+
+#goods .detail_head {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  width: 100%;
+  border-bottom: .5px solid #b2b2b2;
+  background: #f9f9f9;
+}
+
+#goods .detail_head p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+#goods .detail_head p img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#goods .detail_head .cart_edit img {
+  margin-left: 470px;
+}
+
+#goods .detail_item .swiper-button-prev {
+  left: 200px;
+  color: #ccc;
+}
+
+#goods .detail_item .swiper-button-next {
+  right: 200px;
+  color: #ccc;
+}
+
+#goods .detail_item .commodity-meta-wrap {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#goods .detail_item .commodity-meta-wrap .title {
+  font-size: 14px;
+  color: #000;
+  line-height: 21px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#goods .detail_item .commodity-meta-wrap .price {
+  font-size: 18px;
+  color: #000;
+  letter-spacing: -.21px;
+  font-weight: 900;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#goods .detail_item .commodity-text-wrap {
+  width: 100%;
+}
+
+#goods .detail_item .commodity-text-wrap .section-brief {
+  padding: 15px 18px;
+  background: #f2f2f2;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+}
+
+#goods .detail_item .commodity-text-wrap .section-normal {
+  padding: 9px 15px;
+}
+
+#goods .detail_item .commodity-text-wrap .section-normal .section-link {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 16px;
+  background-color: transparent;
+  background-image: url(../../images/youjiantou.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#goods .actions_button {
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+#goods .actions_button .service {
+  display: block;
+}
+
+#goods .actions_button .service img {
+  width: 28px;
+  height: 28px;
+}
+
+#goods .actions_button .service span {
+  font-size: 12px;
+}
+
+#goods .actions_button .cart_btn {
+  display: inline-block;
+  height: 44px;
+  text-align: center;
+  line-height: 22px;
+  width: 46%;
+  border: 0 solid transparent;
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+}
+
+#goods .actions_button .buy_btn {
+  display: inline-block;
+  height: 44px;
+  text-align: center;
+  line-height: 22px;
+  width: 46%;
+  border: 0 solid transparent;
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+}
+
+#goods .parameters {
+  width: 1024px;
+  background: #fff;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  /* padding-bottom: 10px; */
+}
+
+#goods .parameters .title {
+  border-bottom: .5px solid #bcbbc1;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+  text-align: center;
+}
+
+#goods .parameters .content {
+  padding-left: 15px;
+  /* max-height: 60vh; */
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+#goods .parameters .content .line {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 15px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-bottom: .5px solid #bcbbc1;
+}
+
+#goods .parameters .content .line .line-label {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 90px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #999;
+}
+
+#goods .parameters .content .line .line-value {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 1%;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000;
+}
+
+#goods .parameters .content .line:last-child {
+  border-bottom: 0;
+}
+#goods .parameters .actions{
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+#goods .parameters .mu-button {
+  display: inline-block;
+  height: 44px;
+  text-align: center;
+  line-height: 22px;
+  width: 100%;
+  border: 0 solid transparent;
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+  margin-top: 10px;
+  
+}
+
+/* login */
+.login {
+  background: #fff;
+  display: none;
+  width:1024px;
+  position: fixed;
+  bottom: -500px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+}
+
+.login h3 {
+  margin: 20px 0 50px 5px;
+}
+
+.login h3 img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.login p {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 25px;
+}
+
+.login form input {
+  width: 984px;
+  height: 22px;
+  border-radius: 22px;
+  font-size: 16px;
+  padding: 11px 20px;
+  background: #f2f2f2;
+  outline-width: 0;
+  outline-style: none;
+  border: none;
+  margin-top: 20px;
+  /* outline-color: rgba(0, 0, 0, 0); */
+}
+
+.login form button {
+  display: inline-block;
+  height: 44px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 22px;
+  width: 100%;
+  border: 0 solid rgba(0, 0, 0, 0);
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+}
+
+.login form .actions {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12px;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login form .actions a {
+  display: block;
+  color: #60b3fa;
+}
+
+.login .warn_text {
+  width: 100%;
+  color: #60b3fa;
+  font-size: 13px;
+  text-align: center;
+  padding-top:280px;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJI</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/swiper.min.js"></script>
+    <style>
+        .swiper-button {
+            opacity: 0;
+        }
+
+        .swiper-container:hover .swiper-button {
+            opacity: 1;
+            color: rgba(88, 88, 88, .6);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="globalHeader">
+        <div class="headerWrap">
+            <h1 id="siteName">
+                <a href="../index.html">
+                    <img src="https://www.muji.com.cn/cn/net/contents/img/logo_muji_b.png" alt="无印良品">
+                </a>
+            </h1>
+            <nav id="GlobalNav">
+                <!-- <h1>菜单</h1> -->
+                <div class="wrapper">
+                    <div class="cancel"></div>
+                    <ul class="clearfix">
+                        <!-- <li class="home"><a href="https://www.muji.com.cn/">首页</a></li> -->
+                        <li><a href="">网络商城</a></li>
+                        <li><a href="">店铺信息</a></li>
+                        <li><a href="">生活良品研究所</a></li>
+                        <li><a href="">问题咨询</a></li>
+                        <li><a href="">人才招聘</a></li>
+                        <li><a href="">店铺合作伙伴</a></li>
+                        <li><a href="">商品目录册</a></li>
+                        <li><a href="">企业情报</a></li>
+                        <li><a href="">何谓无印良品</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- app -->
+    <div id="app">
+
+        <!-- 按钮 -->
+        <div class="button_wrap">
+            <div class="button">
+                <a href=""><img src="../static/images/search.png" alt=""></a>
+                <a href=""><img src="../static/images/app.png" alt=""></a>
+                <a href=""><img src="../static/images/message.png" alt=""></a>
+                <a href=""><img src="../static/images/cart.png" alt="" class="cart"></a>
+                <p style="cursor: pointer;" class="download">下载客户端 App
+                    <span class="popup_code">
+                        <img src="https://www.muji.com.cn/cn/store/2314dd337a69749d5ce6d85d200aedc3.png"
+                            alt="MUJI passport 下载">
+                        <span class="label">
+                            随时随地购买无印良品
+                        </span>
+                    </span>
+                </p>
+                <a href="" style="display: none;" class="userhead"><img src="../static/images/yonghu.png" alt="">
+                    <span class="popup_user">
+                        <i class="primary">账号详情</i>
+                        <i class="logout">退出</i>
+                    </span>
+                </a>
+
+                <a href="" class="loginBtn">登录/注册</a>
+            </div>
+
+            <!-- <div class="popup_user">
+                <a href="javascript:void(0);" class="primary">账号详情</a>
+                <a href="javascript:void(0);">退出</a>
+            </div> -->
+        </div>
+
+        <!-- 公告 -->
+        <div id="notice">
+            <h3>公告</h3>
+            <div class="notice_content">
+                <p class="content1">
+                    关于无印良品官网商城12月25日~31日暂停营业的公告
+                </p>
+                <!-- <p class="content2">
+                    包邮金额门槛调整通知
+                </p> -->
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="swiper-container" style="position: relative;">
+            <div class="swiper-wrapper" style="height: 500px;width: 983px;">
+                <div class="swiper-slide" style="height: 100%;width: 100%;">
+                    <img src="https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/16070520352020XMASweb.jpg?1607052036#w"
+                        alt="" style="height: 100%;width: 100%;">
+                </div>
+                <div class="swiper-slide" style="height: 100%;width: 100%;">
+                    <img src="https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/16046585441200-608.jpg?1604658546#w"
+                        alt="" style="height: 100%;width: 100%;">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button">
+                <div class="swiper-button-prev swiper-button"></div>
+            </div>
+            <div class="swiper-button">
+                <div class="swiper-button-next swiper-button"></div>
+            </div>
+        </div>
+
+
+        <!-- 新到商品 -->
+        <div class="newArrivals">
+            <div class="child_head">
+                <div class="section_title">
+                    新到商品
+                </div>
+                <div class="section_action">
+                    <a href="">查看全部</a>
+                </div>
+            </div>
+            <div class="section_content">
+                <div class="content_box" style="overflow-x: hidden;">
+                    <div class="content_wrap">
+
+                        <!-- child -->
+
+                        <!-- <div class="new_item">
+                            <div class="item_img">
+                                <img src="https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-revised-prod/4550344550120_1.jpg"
+                                    alt="" style="width: 110px;height: 110px;">
+                            </div>
+                            <div class="title">
+                                可多次洗涤，反复使用_2枚装・3层口罩
+                            </div>
+                            <div class="price">
+                                <span class="priceTag">
+                                    ¥58
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <!-- child -->
+                    </div>
+                </div>
+                <div class="new_left new_btn">
+                </div>
+                <div class="new_right new_btn"><img src="../images/listImg/right.png" alt=""></div>
+
+            </div>
+
+        </div>
+
+        <!--Catalogs -->
+        <div class="catalogs">
+            <div class="catalogs_clothes">
+                <div class="child_head">
+                    <div class="section_title">
+                        衣服杂物
+                    </div>
+                    <div class="section_action">
+                        <a href="">查看全部</a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277725051527499851man.jpg?1527772506#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">男装</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277724651527499866woman.jpg?1527772466#h) no-repeat;background-size:100%">
+                            </div>
+                            <p class="title">女装</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277724871527499878kids.jpg?1527772487#h) no-repeat;background-size:100%">
+                            </div>
+                            <p class="title">童装</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277725241527499890ACC.jpg?1527772524#h) no-repeat;background-size:100%">
+                            </div>
+                            <p class="title">服装杂货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277725391527499903bag.jpg?1527772540#h) no-repeat;background-size:100%">
+                            </div>
+                            <p class="title">鞋包</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277725541527499916106.jpg?1527772555#h) no-repeat;background-size:100%">
+                            </div>
+                            <p class="title">内衣</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalogs_life">
+                <div class="child_head">
+                    <div class="section_title">
+                        生活杂物
+                    </div>
+                    <div class="section_action">
+                        <a href="">查看全部</a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277726341527499928109.jpg?1527772635#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">织品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277726501527499939110.jpg?1527772651#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">家具</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277726751527499951111.jpg?1527772675#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">电子产品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277727021527499966112.jpg?1527772703#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">居家用品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277727311527499978113.jpg?1527772732#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">文具</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277727581527499989114.jpg?1527772759#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">卫生&美容用品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15277727871527500002115.jpg?1527772788#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">户外用品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/1533292657idee.jpg?1533292659#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">IDEE</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalogs_food">
+                <div class="child_head">
+                    <div class="section_title">
+                        食品
+                    </div>
+                    <div class="section_action">
+                        <a href="">查看全部</a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/15953175724550002861100_400.jpg?1595317573#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">饮料</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/1595329126cook.jpg?1595329127#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">点心</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-article/1595329190kare.jpg?1595329191#h) no-repeat;background-size:100% ;">
+                            </div>
+                            <p class="title">调味</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- commodity_content -->
+        <div class="commodity_content">
+            <div class="child_head">
+                <div class="section_title">
+                    推荐商品
+                </div>
+            </div>
+            <div class="MuCommodityList">
+                <ul>
+                    <!-- <li>
+                        <div class="item">
+                            <div class="image"
+                                style="background-image: url(https://prodoss01.blob.core.chinacloudapi.cn/yoren-muji-ec-revised-prod/4550182568219.jpg?0#h);background-size: 100%;">
+                            </div>
+                            <div class="title">
+                                修护舒缓化妆水
+                            </div>
+                            <div class="price">
+                                <span class="MuPriceTag">
+                                    ¥60
+                                </span>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- page分页器 -->
+        <div class="page" style="margin-bottom:15px;cursor: pointer;"></div>
+    </div>
+    <!-- login -->
+    <div class="login">
+        <h3><img src="../static/images/quxiao.png" alt="" class="cancel"></h3>
+        <p>登录</p>
+        <p>商城账号</p>
+        <form action="">
+            <input type="text" placeholder="输入账号" id="username">
+            <input type="password" placeholder="输入密码" id="password">
+            <button style="outline: none;">登录</button>
+            <div class="actions">
+                <a href="" class="register">新用户注册</a>
+                <a href="">忘记密码</a>
+            </div>
+        </form>
+        <div class="warn_text">
+            如登录遇到异常，请联系客服电话 400-920-9299
+        </div>
+    </div>
+
+    <script src="../js/banner.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

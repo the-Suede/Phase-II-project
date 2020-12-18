@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body {
+    font: 16px/1.5 "Helvetica", "Lucida Grande", "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+
+#globalHeader {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    /* z-index: 100; */
+    font-size: 16px;
+}
+
+.headerWrap {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+}
+
+#siteName {
+    width: 130px;
+    /* z-index: 1001; */
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+}
+
+#siteName a {
+    padding: 22px 0;
+    display: block;
+    line-height: 1;
+}
+
+#siteName a img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+}
+
+#globalHeader .wrapper ul {
+    padding-left: 15%;
+    /* margin: 0;
+    padding: 0; */
+    list-style: none;
+}
+
+#globalHeader .wrapper ul li {
+    float: left;
+    font-size: 13px;
+    padding: 28px 10px;
+    line-height: 1;
+    color: red;
+}

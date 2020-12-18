@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+button{
+  outline: none;
+  cursor: pointer;
+}
+#app {
+  overflow-y: scroll;
+  flex: 1;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#app .detail_head {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  width: 100%;
+  border-bottom: .5px solid #b2b2b2;
+  background: #f9f9f9;
+}
+
+#app .detail_head p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#app .detail_head p.return{
+  cursor: pointer;
+}
+
+#app .detail_head p img {
+  width: 30px;
+  height: 30px;
+}
+
+#app .message {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+#app .message h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#app .message h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#app .message pre {
+  font-family: inherit;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message_btn {
+  display: inline-block;
+  height: 44px;
+  text-align: center;
+  line-height: 22px;
+  width: 1024px;
+  margin: 0 auto;
+  border: 0 solid transparent;
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.register {
+  display: none;
+  flex: 1;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.register h3 {
+  margin: 20px 0 50px 5px;
+}
+
+.register h3 img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.register p {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 25px;
+}
+
+.register form input {
+  /* box-sizing: border-box; */
+  width: 984px;
+  height: 22px;
+  border-radius: 22px;
+  font-size: 16px;
+  padding: 11px 20px;
+  background: #f2f2f2;
+  outline-width: 0;
+  outline-style: none;
+  border: none;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  /* outline-color: rgba(0, 0, 0, 0); */
+}
+.register form #verifyCodeDemo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register form #verifyCodeDemo #picyzm{
+  width: 150px;
+  height: 22px;
+  display: inline-block;
+  margin-top:20px;
+}
+
+.register form button {
+  display: inline-block;
+  height: 44px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 22px;
+  width: 100%;
+  border: 0 solid transparent;
+  background: #7f0019;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 22px;
+}

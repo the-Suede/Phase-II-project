@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+select,
+option,
+label,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+i,
+em,
+b,
+strong,
+img,
+table,
+tr,
+td,
+section,
+footer
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+em,
+i{
+    font-style: normal;
+}
+
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: normal;
+}
+img{
+    display: block;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html,
+body{
+    height: 100%;
+}
